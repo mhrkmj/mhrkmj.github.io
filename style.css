@@ -1,0 +1,247 @@
+:root {
+  --myBlue: #c0e9ff;
+  --myPink: #f7cbd5;
+  --myWhite: #FCFBED;
+  --myBlack: #221A06;
+  --myDarkBlue: #2d5685;
+  --myYellow: #fff1ab;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fafafa;
+}
+
+header {
+  background-color: var(--myDarkBlue);
+  color: var(--myWhite);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  border: none;
+}
+
+header h1 a {
+  font-size: 1.3rem;
+  color: var(--myWhite);
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s ease-in-out;
+}
+
+header h1 a:hover {
+  opacity: 0.8;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: var(--myWhite);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+nav a:hover {
+  background-color: var(--myBlue);
+  color: #221A06;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);}
+
+nav a.active {
+  background-color: var(--myBlue);
+  color: #221A06;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  /* font-weight: 500; */
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: var(--myBlue);
+  color: white;
+  margin-top: 2rem;
+}
+
+.grid-2r {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 1rem;
+  gap: 1rem;
+  grid-auto-rows: 1fr;
+  animation: fadeIn 0.4s ease;
+}
+.contact-card {
+  text-align: center;
+  align-items: center;
+  background: var(--myDarkBlue);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.25s ease;
+  color: white;
+}
+
+.contact-card:hover{
+  scale: 1.01;
+  box-shadow: 0 2px 6px var(--myPink);
+}
+
+.resume {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.25s ease;
+}
+
+.resume:hover {
+  scale: 1.01;
+  box-shadow: 0 2px 6px var(--myPink);
+}
+
+.pdf-viewer {
+  width: 100%;
+  height: 85vh;
+  border-radius: 6px;
+  border: none;
+}
+
+.index-card {
+  background: white;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.25s ease;
+  color: black;
+  animation: fadeIn 0.4s ease;
+}
+
+.index-card:hover{
+  scale: 1.01;
+  box-shadow: 0 2px 6px var(--myPink);
+}
+
+.profile {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem auto;
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.symbols {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.contact-card-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 2rem 0.5rem 0 0.5rem;
+  row-gap: 1rem;
+}
+
+.contact-card-info a {
+  color: inherit; 
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+  border-radius: 8px;
+  background: var(--myBlue);
+  color: black;
+}
+.icon:hover {
+  box-shadow: 0 2px 6px var(--myPink);
+  scale: 1.01;
+}
+
+.grid-index-row1 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 0.5rem;
+  animation: fadeIn 0.4s ease;  
+}
+
+.grid-index-row2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.5rem;
+  animation: fadeIn 0.4s ease;  
+}
+
+.content-home {
+  margin: 1rem;
+}
+
+.content-home p{
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.content-home h2{
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid var(--myBlue);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

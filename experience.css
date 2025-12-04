@@ -1,0 +1,92 @@
+:root {
+  --myBlue: #c0e9ff;
+  --myPink: #f7cbd5;
+  --myWhite: #FCFBED;
+  --myBlack: #221A06;
+  --myDarkBlue: #2d5685;
+  --myYellow: #fff1ab;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #fafafa;
+  color: #222;
+  margin: 0;
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  gap: 1rem;
+}
+
+.toggle-btn {
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #222;
+  background: white;
+  color: #222;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+}
+
+.toggle-btn.active {
+  background: var(--myPink);
+  color: #000000;
+}
+
+.toggle-btn:hover {
+  background: var(--myPink);
+  color: #000000;
+}
+
+.content-section {
+  display: none;
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem 2rem;
+}
+
+.content-section.active {
+  display: block;
+  animation: fadeIn 0.4s ease;
+}
+
+.project {
+  background: white;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.25s ease;
+}
+
+.project:hover {
+  scale: 1.01;
+  box-shadow: 0 2px 6px var(--myPink);
+}
+
+.project embed {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+}
+
+.project h4 {
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid var(--myBlue);
+  font-weight: 500;
+}
+
+p {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+h2 {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--myPink);
+  padding-bottom: 0.5rem;
+}

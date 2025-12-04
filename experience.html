@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience | Meherika Majumdar</title>
+  <link rel="stylesheet" href="experience.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1><a href="index.html">Meherika Majumdar</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="experience.html" class="active">Experience</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="toggle">
+      <button class="toggle-btn active" data-target="clubs">Clubs and Activities</button>
+      <button class="toggle-btn" data-target="internships">Internships</button>
+    </div>
+
+    <section id="clubs" class="content-section active">
+      <h2>Clubs and Activities</h2>
+
+      <div class="project">
+        <h3>Georgia Tech Solar Racing - Power Train Engineer</h3>
+        <h4>August 2025 – Present</h4>
+        <p>Co-designed an updated breakout board to aid the testing of high-volume powertrain connectors while prioritizing reliable communication amongst various other vehicle subsystems. Using KiCad, my partner and I created the schematics, the PCB layouts, and manufacturing files. The board supports and integrates various connectors, including UART, RJ45, Molex, and more, with a configurable CAN bus termination and test points.</p>
+        <p>Currently, I am working on redesigning our Motorsense board, which collects position, temperature, and CAN data from the Wavesculptors to the motors. I am updating its KiCad schematic and layout, verifying component availability, and preparing it for fabrication. Alongside this, I’ve also been working with team leads to work on the harnessing of our motors.</p>
+      </div>
+
+      <div class="project">
+        <h3>Georgia Tech Vertically Integrated Projects - AquaBots</h3>
+        <h4>January 2025 – Present</h4>
+        <p>
+          As part of the Prince William Sound Salmon Computer Vision Team at Georgia Tech's Aquabot Vertically Integrated Project, 
+          I've been researching and implementing EfficientNetV2 convolutional neural networks (CNNs) to improve the accuracy and 
+          training efficiency of a program for tracking salmon by using fish-scale images.
+        </p>
+        <p>
+          Recently, my work has focused on consolidating existing Jupyter notebooks, refining datasets, 
+          and integrating depth-augmented ZED footage for model training and testing. I’ve explored EfficientNet-B1 
+          and EfficientNetV2-M architectures, emphasizing the importance of faster training and improved interpretability. 
+          To address the subjectivity of fish-scale age labeling, I’m also investigating soft labeling and fuzzy logic 
+          approaches to better model uncertainty.
+        </p>        
+      </div>
+
+      <div class="project">
+        <h3>Georgia Tech IOS Club - ARchitect</h3>
+        <h4>January 2025 – May 2025</h4>
+        <p>
+          At Georgia Tech’s iOS Club, I worked on ARchitect, a social media and interior design app that blends 
+          augmented reality with a Pinterest and Instagram-like feed. On the social media subteam, I develop 
+          dynamic 3D visualizations with real-time object manipulation and product details using RealityKit and SwiftUI, 
+          ensuring smooth transitions between AR views and the feed. I collaborated closely with UI/UX designers to 
+          align AR interactions with the app’s visual aesthetic, creating a cohesive and engaging user experience. 
+        </p>
+        <p>
+          This project strengthened both my technical skills and my ability to work across teams. At the end of 
+          the semester, our app was showcased at the iOS Club’s biannual demo event, where ARchitect won the 
+          Popular App Award by public vote.
+        </p>
+        <embed 
+          src="https://drive.google.com/file/d/1wiF5cJcEq9cy18Lq4gOunpUSjJgrXJWU/preview" type="video/mp4"/>
+      </div>
+
+    </section>
+
+    <section id="internships" class="content-section">
+      <h2>Internships</h2>
+
+      <div class="project">
+        <h3>Remote Software Development Intern at eBest Mobile</h3>
+        <h4>June - August 2025</h4>
+        <p>As a Remote Software Intern at eBest Mobile, a mobile technology company specializing in sales force automation and retail execution systems for FMCG and CPG brands, in Bengaluru, I worked with a group of senior software developers. I built an FMCG-focused mobile application using Ionic and Angular, developing core features such as user authentication, a product catalog, a shopping cart, and order history pages. I also implemented responsive UI components and navigation to ensure a smooth, consistent experience across devices. Through this role, I gained hands-on experience with full mobile app development workflows, from design and implementation to testing and deployment.</p>
+        <embed
+          src="https://drive.google.com/file/d/1KCpa42tvyqPJvLgdhQbrPqUquvB0Eiil/preview" type="video/mp4"/>
+      </div>
+
+      <div class="project">
+        <h3>Software Engineering Intern at Line Vietnam</h3>
+        <h4>June 2023</h4>
+        <p>
+          At Line Vietnam in Ho Chi Minh City, I interned at the development center responsible for maintaining and creating applications on the Line core platform. Working alongside three other interns, I reviewed, debugged, and optimized Java-based projects to meet company standards and improve functionality. I gained hands-on experience with the Scrum framework, strengthening collaboration and understanding of agile development workflows. Throughout the internship, I also participated in backend team meetings, contributing insights while deepening my technical knowledge of production-level software systems.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Apprentice at VNG Vietnam</h3>
+        <h4>March - May 2023</h4>
+        <p>
+          At VNG Vietnam, I completed the VNG Junior Development Program as an apprentice under the mentorship of a Senior Software Engineer at ZingPlay Game Studios. During this program, I developed foundational backend game development skills using Python, with an emphasis on scalability, performance, and clean software design. To apply what I learned, I designed and built a Space Shooter game, demonstrating my understanding of core game mechanics, coding principles, and backend architecture.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Meherika.</p>
+  </footer>
+
+  <script src="experience.js"></script>
+</body>
+</html>
