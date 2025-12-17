@@ -15,3 +15,24 @@ buttons.forEach(button => {
     target.classList.add("active");
   });
 });
+
+function goToSpaceShooter() {
+  // deactivate tabs
+  document.querySelectorAll('.toggle-btn').forEach(btn =>
+    btn.classList.remove('active')
+  );
+  document.querySelectorAll('.content-section').forEach(sec =>
+    sec.classList.remove('active')
+  );
+
+  // activate projects tab
+  document.querySelector('[data-target="projects"]').classList.add('active');
+  document.getElementById('projects').classList.add('active');
+
+  // wait for the layout & then scroll
+  setTimeout(() => {
+    document
+      .getElementById('space-shooter')
+      .scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 50);
+}
