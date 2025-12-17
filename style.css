@@ -156,7 +156,6 @@ footer {
 }
 
 .index-card:hover{
-  scale: 1.01;
   box-shadow: 0 2px 6px var(--myPink);
 }
 
@@ -211,7 +210,7 @@ footer {
 }
 .icon:hover {
   box-shadow: 0 2px 6px var(--myPink);
-  scale: 1.01;
+  scale: 1.1;
 }
 
 .grid-index-row1 {
