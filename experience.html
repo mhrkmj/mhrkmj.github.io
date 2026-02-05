@@ -10,13 +10,19 @@
 
 <body>
   <header>
-    <h1><a href="index.html">Meherika Majumdar</a></h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="experience.html" class="active">Experience</a>
-      <a href="resume.html">Resume</a>
-    </nav>
+    <div class="header-content">
+      <h1><a href="index.html">MM</a></h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="experience.html" class="active">Experience</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </div>
   </header>
+
+<div class="page-header">
+    <h2 id="page-header-title">Experience</h2>
+</div>
 
   <main>
     <div class="toggle">
@@ -26,8 +32,6 @@
     </div>
 
     <section id="clubs" class="content-section active">
-      <h2>Clubs and Activities</h2>
-
       <div class="project">
         <h3>Georgia Tech Solar Racing - Power Train Engineer</h3>
         <h4>August 2025 – Present</h4>
@@ -72,14 +76,13 @@
           frameborder="0" 
           allow="autoplay; fullscreen"
           allowfullscreen></iframe>
+
         </div>
       </div>
 
     </section>
 
     <section id="internships" class="content-section">
-      <h2>Internships</h2>
-
       <div class="project">
         <h3>Remote Software Development Intern at eBest Mobile</h3>
         <h4>June - August 2025</h4>
@@ -109,18 +112,17 @@
         <p>
           At VNG Vietnam, I completed the VNG Junior Development Program as an apprentice under the mentorship of a Senior Software Engineer at ZingPlay Game Studios. During this program, I developed foundational backend game development skills using Python, with an emphasis on scalability, performance, and clean software design. To apply what I learned, I designed and built a Space Shooter game, demonstrating my understanding of core game mechanics, coding principles, and backend architecture.</p>
           
-          <button class="extra_button" onclick="goToSpaceShooter()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket-icon lucide-rocket"> <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/> <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22 0 0 1-4 2z"/> <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/> <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
-            Learn more about this project!
-          </button>
-
+        <button class="extra_button" onclick="goToSpaceShooter()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket-icon lucide-rocket"> <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/> <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22 0 0 1-4 2z"/> <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/> <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+          Learn more about this project!
+        </button>
+        <div>
           <img src="media/images/space_shooter_1.png" alt="Space shooter game start page"/>
-      </div>
+        </div>
+        </div>
     </section>
 
     <section id="projects" class="content-section">
-      <h2>Projects</h2>
-
       <div class="project">
         <h3>F1 Fantasy Analytics System</h3>
         <h4>March 2025 - Present</h4>
@@ -160,7 +162,7 @@
   </main>
 
   <footer>
-    <p>© 2025 Meherika.</p>
+    <p>© 2025 Meherika Majumdar.</p>
   </footer>
 
   <script src="experience.js"></script>
