@@ -1,57 +1,64 @@
 .resume-page-wrapper {
   margin: 2rem auto ;
   max-width: 83%;
-  animation: fadeIn 0.4s ease;
+  animation: fadeIn 0.5s ease;
 }
 
 .resume-grid {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr 2fr;
   gap: 1.5rem;
-  animation: fadeIn 0.4s ease;
+  animation: fadeIn 0.5s ease;
   align-items: stretch;
 }
 
 .resume-contact-card {
-  text-align: center;
   align-items: center;
-  background: linear-gradient(45deg, var(--myDarkBlue) 0%, #1e3e62 100%);;
+  background: var(--myGrey);
   padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 4px;
   transition: all 0.25s ease;
-  color: white;
+  color: var(--myBlack);
   display: flex;
   flex-direction: column;
   height: 100%;
   align-self: stretch;
 }
 
-.resume-contact-card:hover{
-  transform: translateY(-3px);
-  box-shadow: 0 2px 6px var(--myPink);
+.resume-about-me {
+  align-items: center;
 }
 
-.resume-contact-card-info {
+.resume-about-me p {
+  text-align:center;
+  margin-bottom: 0.5rem;
+}
+
+.resume-contact-info {
+  font-family: var(--sans);
   display: flex;
   flex-direction: column;
-  text-align: left;
-  row-gap: 1.2rem;
-  line-height: 1.2rem;
+  align-items: center;
 }
 
-.resume-contact-card-info a {
-  color: inherit; 
+.resume-info-row {
+  margin: 0.5rem auto;
+  color: var(--myBlack);
   text-decoration: none;
   display: flex;
   align-items: center;
   gap: 1rem;
+  vertical-align: middle;
+  padding: 0.2rem 0.5rem;
+  border-bottom: 1px solid rgba(146, 146, 146, 0.8);
+  transition: all 0.25s;
 }
 
-.resume-info-row {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+.resume-info-row:hover {
+  background: linear-gradient(45deg, var(--myPink), var(--myBlue));
+  border-bottom: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
 
 .resume-embed-wrapper {
@@ -59,8 +66,9 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: 4px;
   align-self: stretch;
+  animation: fadeIn 0.5s ease;
 }
 
 .pdf-viewer {
@@ -72,18 +80,24 @@
   display: block;
 }
 
-.resume-profile {
+.resume-pic {
   height: 16rem;
-  border-radius: 8px;
+  width: 20rem;
   overflow: hidden;
-  margin: 0 auto 1rem auto;
 }
 
-.resume-profile img {
+.resume-pic img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: bottom;
+}
+
+.resume-contact-card h2 {
+  font-family: var(--serif);
+  color: var(--myDarkBlue);
+  letter-spacing: 0.5px;
+  margin: 1rem auto;
 }
 
 @media (max-width: 768px) {
@@ -97,7 +111,9 @@
 
   .resume-contact-card {
     margin: 0;
+    order: -1;
   }
+
   .resume-embed-wrapper {
     height: clamp(700px, 70vh, 800px);
     min-height: 420px;
@@ -112,8 +128,8 @@
     object-position: 50% 50%;
   }
 
-  .icon {
-    padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+  .resume-contact-card p {
+    font-size: 0.95rem;
   }
 
 }
@@ -168,11 +184,7 @@
   }
 
   .resume-contact-card-info p {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     word-break: break-word;
-  }
-
-  .icon {
-    padding: 0.45rem 0.45rem 0.2rem 0.45rem;
   }
 }
